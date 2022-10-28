@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply rounded-full bg-blue-500 p-1 text-white hover:bg-blue-700;
+}
+
+.project-card {
+  @apply text- h-20 w-32 rounded-lg border-4 border-l-amber-500 bg-white p-2;
+}

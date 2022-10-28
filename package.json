@@ -1,0 +1,27 @@
+{
+  "name": "odin-admin-dashboard",
+  "version": "1.0.0",
+  "description": "The Odin Project Admin Dashboard",
+  "main": "index.js",
+  "scripts": {
+    "buildcss": "npx tailwindcss -i ./src/style.css -o ./public/public.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syzgod/odin-admin-dashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/syzgod/odin-admin-dashboard/issues"
+  },
+  "homepage": "https://github.com/syzgod/odin-admin-dashboard#readme",
+  "dependencies": {
+    "tailwindcss": "^3.2.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.13"
+  }
+}

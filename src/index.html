@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/public.css" />
+    <script src="../src/index.js"></script>
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <div class="container grid grid-cols-6">
+      <div class="sidebar grid grid-rows-3 bg-blue-400 text-white">
+        <h2>
+          <img class="inline h-4 pr-2" src="../images/view-dashboard.png" />
+          Dashboard
+        </h2>
+        <ul class="main-menu grid grid-cols-1 content-start text-white">
+          <li>
+            <a href="#"
+              ><img
+                class="inline h-4 pr-2"
+                src="../images/home-circle-outline.png"
+              />
+              Home</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="inline h-4 pr-2"
+                src="../images/account-group-outline.png"
+              />
+              Profile</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="inline h-4 pr-2"
+                src="../images/message-reply-text-outline.png"
+              />Messages</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="inline h-4 pr-2"
+                src="../images/clock-time-three-outline.png"
+              />History</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="inline h-4 pr-2"
+                src="../images/note-multiple-outline.png"
+              />Tasks</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="inline h-4 pr-2"
+                src="../images/account-group.png"
+              />Communities</a
+            >
+          </li>
+        </ul>
+        <ul class="services grid content-end text-white">
+          <li>
+            <a href="#"
+              ><img
+                class="inline h-4 pr-2"
+                src="../images/cog-outline.png"
+              />Settings</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="inline h-4 pr-2"
+                src="../images/tooltip-question-outline.png"
+              />Support</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="inline h-4 pr-2"
+                src="../images/shield-check-outline.png"
+              />Privacy</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="main-content col-span-5 grid border border-black">
+        <div class="header grid h-4 grid-cols-4 items-center">
+          <img class="inline h-6 pr-2" src="../images/magnify (1).png" alt="" />
+          <input
+            class="search-bar rounded-full border border-black p-1 text-center"
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Search in the dashboard"
+          />
+          <img src="" alt="profile-pic" />
+          <div class="profile">
+            <img
+              class="inline h-4 pr-3"
+              src="../images/bell-ring-outline.png"
+            />Viktor Berczeli
+          </div>
+        </div>
+        <div class="welcome grid grid-cols-3">
+          <img src="" alt="profile-pic" class="profile-pic" />
+          <div>Welcome, Viktor</div>
+          <ul class="actions grid grid-cols-3">
+            <li><button class="btn" href="#">New</button></li>
+            <li><button class="btn" href="#">Upload</button></li>
+            <li><button class="btn" href="#">Share</button></li>
+          </ul>
+        </div>
+        <div class="projects grid grid-cols-2 bg-blue-300">
+          <ul class="m-5 grid grid-cols-2 items-center justify-center gap-2">
+            <li class="project-card">
+              <a href="#">Project 1</a>
+            </li>
+            <li class="project-card">
+              <a href="#">Project 2</a>
+            </li>
+            <li class="project-card">
+              <a href="#">Project 3</a>
+            </li>
+            <li class="project-card">
+              <a href="#">Project 4</a>
+            </li>
+            <li class="project-card">
+              <a href="#">Project 5</a>
+            </li>
+            <li class="project-card">
+              <a href="#">Project 6</a>
+            </li>
+          </ul>
+          <div class="messages grid grid-rows-2">
+            <div class="announcements">Announcements</div>
+            <div class="trending">
+              Trending
+              <ul>
+                <li>msg1</li>
+                <li>msg2</li>
+                <li>msg3</li>
+                <li>msg4</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
