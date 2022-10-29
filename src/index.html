@@ -8,121 +8,139 @@
     <script src="../src/index.js"></script>
     <title>Admin Dashboard</title>
   </head>
-  <body>
-    <div class="container grid grid-cols-6">
-      <div class="sidebar grid grid-rows-3 bg-blue-400 text-white">
+  <body class="h-screen w-screen">
+    <div class="container grid h-screen grid-cols-6">
+      <div
+        class="sidebar grid grid-rows-2 border-4 bg-blue-400 pl-3 text-white shadow-inner shadow-black"
+      >
         <h2>
           <img class="inline h-4 pr-2" src="../images/view-dashboard.png" />
           Dashboard
         </h2>
-        <ul class="main-menu grid grid-cols-1 content-start text-white">
-          <li>
-            <a href="#"
-              ><img
-                class="inline h-4 pr-2"
-                src="../images/home-circle-outline.png"
-              />
-              Home</a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                class="inline h-4 pr-2"
-                src="../images/account-group-outline.png"
-              />
-              Profile</a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                class="inline h-4 pr-2"
-                src="../images/message-reply-text-outline.png"
-              />Messages</a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                class="inline h-4 pr-2"
-                src="../images/clock-time-three-outline.png"
-              />History</a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                class="inline h-4 pr-2"
-                src="../images/note-multiple-outline.png"
-              />Tasks</a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                class="inline h-4 pr-2"
-                src="../images/account-group.png"
-              />Communities</a
-            >
-          </li>
-        </ul>
-        <ul class="services grid content-end text-white">
-          <li>
-            <a href="#"
-              ><img
-                class="inline h-4 pr-2"
-                src="../images/cog-outline.png"
-              />Settings</a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                class="inline h-4 pr-2"
-                src="../images/tooltip-question-outline.png"
-              />Support</a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                class="inline h-4 pr-2"
-                src="../images/shield-check-outline.png"
-              />Privacy</a
-            >
-          </li>
-        </ul>
+        <div class="menu grid justify-items-start">
+          <ul class="grid grid-cols-1 content-start text-white">
+            <li>
+              <a href="#"
+                ><img
+                  class="inline h-4 pr-2"
+                  src="../images/home-circle-outline.png"
+                />
+                Home</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="inline h-4 pr-2"
+                  src="../images/account-group-outline.png"
+                />
+                Profile</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="inline h-4 pr-2"
+                  src="../images/message-reply-text-outline.png"
+                />Messages</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="inline h-4 pr-2"
+                  src="../images/clock-time-three-outline.png"
+                />History</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="inline h-4 pr-2"
+                  src="../images/note-multiple-outline.png"
+                />Tasks</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="inline h-4 pr-2"
+                  src="../images/account-group.png"
+                />Communities</a
+              >
+            </li>
+          </ul>
+          <ul class="services col-span-1 grid content-start text-white">
+            <li>
+              <a href="#"
+                ><img
+                  class="inline h-4 pr-2"
+                  src="../images/cog-outline.png"
+                />Settings</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="inline h-4 pr-2"
+                  src="../images/tooltip-question-outline.png"
+                />Support</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="inline h-4 pr-2"
+                  src="../images/shield-check-outline.png"
+                />Privacy</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="main-content col-span-5 grid border border-black">
-        <div class="header grid h-4 grid-cols-4 items-center">
-          <img class="inline h-6 pr-2" src="../images/magnify (1).png" alt="" />
-          <input
-            class="search-bar rounded-full border border-black p-1 text-center"
-            type="text"
-            name="search"
-            id="search"
-            placeholder="Search in the dashboard"
-          />
-          <img src="" alt="profile-pic" />
-          <div class="profile">
+      <div
+        class="main-content col-span-5 grid border-4 shadow-inner shadow-black"
+      >
+        <div class="header grid h-12 grid-cols-2 items-center">
+          <div class="search-container flex items-center">
+            <img class="ml-6 h-6 pr-2" src="../images/magnify (1).png" alt="" />
+            <input
+              class="search-bar outer-shadow m-2 w-48 rounded-full border border-black p-1 text-center shadow-black"
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Search in the dashboard"
+            />
+          </div>
+          <div class="profile grid grid-flow-col">
+            <img src="" alt="profile-pic" />
             <img
               class="inline h-4 pr-3"
               src="../images/bell-ring-outline.png"
             />Viktor Berczeli
           </div>
         </div>
-        <div class="welcome grid grid-cols-3">
-          <img src="" alt="profile-pic" class="profile-pic" />
-          <div>Welcome, Viktor</div>
-          <ul class="actions grid grid-cols-3">
+        <div
+          class="welcome grid h-48 grid-flow-col grid-cols-2 justify-items-center"
+        >
+          <div
+            class="user-profile grid grid-flow-col items-center justify-items-center gap-8"
+          >
+            <img src="" alt="profile-pic" class="profile-pic" />
+            <div>Welcome, Viktor</div>
+          </div>
+          <ul class="actions grid grid-flow-col grid-cols-1 items-center gap-3">
             <li><button class="btn" href="#">New</button></li>
             <li><button class="btn" href="#">Upload</button></li>
             <li><button class="btn" href="#">Share</button></li>
           </ul>
         </div>
-        <div class="projects grid grid-cols-2 bg-blue-300">
-          <ul class="m-5 grid grid-cols-2 items-center justify-center gap-2">
+        <div
+          class="projects grid grid-cols-2 bg-blue-300 shadow-inner shadow-black"
+        >
+          <ul
+            class="m-5 grid items-center justify-items-center gap-2 md:grid-cols-2 lg:grid-cols-3"
+          >
             <li class="project-card">
               <a href="#">Project 1</a>
             </li>
@@ -142,9 +160,15 @@
               <a href="#">Project 6</a>
             </li>
           </ul>
-          <div class="messages grid grid-rows-2">
-            <div class="announcements">Announcements</div>
-            <div class="trending">
+          <div class="messages bg grid grid-rows-2 gap-2">
+            <div
+              class="announcements outer-shadow mr-3 mt-5 rounded-lg border-4 border-neutral-200 bg-white p-3"
+            >
+              Announcements
+            </div>
+            <div
+              class="trending outer-shadow mb-5 mr-3 rounded-lg border-4 border-neutral-200 bg-white p-3 shadow-inner shadow-black"
+            >
               Trending
               <ul>
                 <li>msg1</li>
